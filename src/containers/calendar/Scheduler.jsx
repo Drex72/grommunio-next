@@ -455,6 +455,8 @@ class ScheduleCalendar extends React.PureComponent {
         );
       case "monthView":
         return <MonthView />;
+      default:
+        return <MonthView />;
       }
     };
 
