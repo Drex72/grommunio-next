@@ -13,16 +13,17 @@ import { useState } from 'react';
 const styles = theme => ({
   button: {
     marginRight: 8,
-    textTransform: 'none',
+    textTransform: 'capitalize',
+    
   },
   plainButton: {
     marginRight: 8,
-    textTransform: 'none',
+    textTransform: 'capitalize',
     color: theme.palette.textPrimary,
   },
 });
 
-const ActionButton = withStyles(styles)(({ classes, children, color, ...childProps }) => {
+export const ActionButton = withStyles(styles)(({ classes, children, color, ...childProps }) => {
   return (
     <Button
       className={color ? classes.button : classes.plainButton}
